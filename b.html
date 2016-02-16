@@ -89,7 +89,17 @@ kunnskap. Den som lærer i settes i sentrum og digitale tjenester utgjør sentra
 plattformer. Deltakernes bidrag i form av blogginnlegg eller tweets og samles av læreren og deles med alle deltakerne. 
 </p>
 </div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
 </body>
  
 </html>
