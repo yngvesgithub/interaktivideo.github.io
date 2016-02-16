@@ -19,6 +19,7 @@ h2.sansserif {
 p.sansserif {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 button.accordion {
     background-color: #eee;
     color: #444;
@@ -31,24 +32,36 @@ button.accordion {
     font-size: 15px;
     transition: 0.4s;
 }
+
 button.accordion.active, button.accordion:hover {
     background-color: #ddd; 
 }
+
 div.panel {
     padding: 0 18px;
     display: none;
     background-color: white;
 }
+
 div.panel.show {
     display: block !important;
 }
-
+div{
+    
+margin-top: 100px;
+margin-right: 650px;
+margin-left: 100px;
+}
 
 </style>
   
 </head> 
 <body>
-  
+ <button class="accordion">Section 1</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+ 
       
 <button class="accordion">Er lys fotoner eller bølger?</button>
 <div class="panel">
@@ -66,7 +79,8 @@ div.panel.show {
 </div>
       <h2 class="sansserif">MOOC deles gjerne i xMOOC og cMOOC.</h2> 
   <button class="accordion">xMOOC</button>
-<div class="panel"><p class="sansserif">En xMOOC er i stor grad er en forlengelse av den tradisjonelle campusundervisningen og befinner seg 
+<div class="panel">
+    <p class="sansserif">En xMOOC er i stor grad er en forlengelse av den tradisjonelle campusundervisningen og befinner seg 
   læringsteoretisk innen behaviorisme og kognitivisme. Behavioristisk læringsteori antar at overføring av kunnskap skjer fra foreleser og et fastlagt pensum til studenter, der vurderinger i stor grad preges av reproduksjon av kunnskap. De fleste xMOOC tilbyr videoforelesninger  hvor innholdet formidles fra én lærer til mange studenter som mottar og eventuelt reproduserer kunnskap i en eksamen, men de kan også inneholde mer studentaktive læringsformer som quizer og ulike typer testing. Kognitiv læringsteori tar utgangspunkt i at læring skjer i individet som er mer aktivt deltakende i egen læring hvor læringen preges av individuell problemløsning og oppgaveløsning. Mens xMOOC først og fremst nyttes innen naturfag brukes cMOOC oftest innen humanistiske og sosiale fag.
 cMOOC bygger på prinsipper fra konnektivisme hvor læring skjer i et nettverk, der elevene bruker digitale plattformer som blogger, 
 wikier, sosiale medieplattformer for å lage forbindelser med innhold, læringsfellesskap og andre elever til å lage og konstruere 
