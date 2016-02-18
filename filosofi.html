@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html><head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="http://interaktivideo.github.io/start.html">Behov for en ny fysikk</a>		
+  <a href="http://interaktivideo.github.io/skriv.html">Skriv deg i gang</a>
+  <a href="http://interaktivideo.github.io/historie.html">Kvantefysikkens historie</a>
+  <a href="http://interaktivideo.github.io/spor.html">Spør en forsker</a>
+  <a href="http://interaktivideo.github.io/bodeog.html">Både bølge og partikkel?</a>
+  <a href="http://interaktivideo.github.io/filosfi.html">Forskjellig ståsted</a>
+  <a href="http://interaktivideo.github.io/oppsummering.html">Oppsummering</a>
+</div>
+
+<div id="main">
+  <h2>Relekvant</h2>
+  <p><strong>Er lys bølger eller fotoner?</strong></p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ Meny</span>
+</div>
+
+<div class="margin">
+<img src="http://atomic.lindahall.org/siteart/questions/schrodinger-atom-for-carbon_lg.jpg" alt="atom" style="width:374px;height:228px;">
+
+
+<h2 class="sansserif">Behovet for en ny fysikk</h2>
+<p>Rundt år 1900 kom fysikerne ordentlig i gang med å studere atomene og mindre artikler som elektroner.
+Men det som ble observert i eksperimenter kunne ikke lenger beskrives ved hjelp av den kjente fysikken som 
+vi i dag kaller klassisk fysikk. Kvantefysikk er en matematisk modell som beskriver mikroverden, slik som Newtons 
+mekanikk er en matematisk modell som beskriver makroverden.</p>
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+     
+</body>
+</html> 
