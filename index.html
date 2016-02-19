@@ -4,9 +4,8 @@
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 
+<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <a href="http://interaktivideo.github.io/start.html">Behov for en ny fysikk</a>		
   <a href="http://interaktivideo.github.io/skriv.html">Skriv deg i gang</a>
@@ -40,13 +39,16 @@ mekanikk er en matematisk modell som beskriver makroverden.</p>
 </div>
 
 
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ Meny</span>
+<h2>Er lys bølger eller fotoner</h2>
+
 <script>
 function openNav() {
-    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("mySidenav").style.width = "250px";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("mySidenav").style.width = "0";
 }
 </script>
      
