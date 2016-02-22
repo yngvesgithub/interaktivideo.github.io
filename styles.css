@@ -2,6 +2,10 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+#main {
+    max-width: 1024px;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
