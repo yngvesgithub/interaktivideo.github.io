@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Versjon2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<button class="accordion">Så det er snakk om ulike modeller?</button>
+<div class="panel">
+    <p class="sansserif">Are: Vi tenker oss fotonet som en punktpartikkel, som ikke har noen utstrekning i det hele tatt. Men så kommer kvantefysikken inn
+        i bildet, og den forteller oss en del underlige ting om størrelser på mikronivå. En av tingene kvantefysikken sier er at noe med lang
+        bølgelengde har en dårlig definert posisjon. Det er på en måte spredt utover i rommet. Mens noe med kort bølgelengde har en veldefinert
+        posisjon, og befinner seg på én plass i rommet. Dette er uttrykt i noe som kalles Heisenbergs uskarphetsrelasjon. Konsekvensen det får,
+        er at for eksempel radiobølger, som har veldig lang bølgelengde, er ikke fotonene på noen veldefinert plass. De er smurt utover i
+        rommet. Mens for stråling med veldig kort bølgelengde, som røntgenstråling, befinner fotonene seg på en mer veldefinert plass i
+        rommet. Røntgenstråling oppfører seg derfor mer som partikler enn radiobølger gjør.<br><br>Arnt Inge: Jeg synes dagens kvantefysiske
+        forståelse av lys er et sammensurium der den matematiske beskrivelsen av lys nesten alltid inneholder bølger, men der vi ofte
+        visualiserer og omtaler fotonet som en liten partikkel som farer gjennom tid og rom som en avgrenset og lokalisert enhet. Jeg synes
+        det er lite samsvar mellom begrepene og matematikken som brukes.  Når vi snakker om en punktformig partikkel samtidig som vi i
+        matematikken må ha med beskrivelser som om den er utstrakt omtrent som en bølge, mener jeg at det er noe som skurrer.</p>
+</div>
+
+<button class="accordion">Åh, det handler om ståsted?</button>
+<div class="panel">
+    <p class="sansserif">Are: Om lys er bølger eller partikler? Svaret er nok «nei», ingen av delene. Lys er verken en tradisjonell bølge eller partikkel,
+        men et eget kvanteobjekt. Det er ikke så viktig for meg hva vi kaller det. Det viktigste for meg er at vi har begreper og matematiske
+        modeller som lar oss regne på det som skjer i naturen på mikronivå og komme med prediksjoner. Da fungerer det veldig bra å betrakte
+        lys som bølger eller partikler alt etter hvilken oppførsel vi ser i eksperimentet vårt. På den måten har jeg nok det som kalles en
+        Københavner-tolkning av kvantefysikken, i tradisjonen etter Niels Bohr.<br><br>Arnt Inge: Jeg vet ikke hva lys egentlig er, men
+        skulle gjerne likt å vite det. Kvantefysikken er svært nyttig for å gjøre beregninger, ingen tvil om det. Men jeg mener at de
+        bildene (begrepene?) som brukes ikke forteller noe om hva lys egentlig er. Jeg ønsker at fysikken skal fortelle oss om hvordan
+        verden faktisk er. Det at lys har egenskaper som for eksempel bølgelengde, forteller oss noe om lys som vi aldri kan komme bort fra.
+        Da ønsker jeg en fysisk modell for lys der bølgelengde er en helt vesentlig del, og representerer noe som er utstrakt i rommet på
+        ordentlig, ikke bare en matematisk tilfeldig størrelse som i kvantefysikken. Denne filosofiske grunnholdningen er annerledes enn
+        den vi finner i kvantefysikken.</p>
+</div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+</script>
+</div>
+</body>
+</html>
