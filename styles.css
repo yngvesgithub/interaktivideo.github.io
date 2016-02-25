@@ -80,6 +80,6 @@ div.panel {
 
 div.panel.show {
     opacity: 1;
-    max-height: 1000px;
+    max-height: 1500px;
 }
 
