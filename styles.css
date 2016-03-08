@@ -2,7 +2,7 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-img, div {
+img, div, button {
     max-width: 1024px;
 }
 
