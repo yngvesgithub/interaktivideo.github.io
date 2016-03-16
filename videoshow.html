@@ -194,10 +194,9 @@
 </script>
 
 <script language="javascript" type="text/javascript">
-    $('iframe').contents().find('video').each(function ()
-    {
-        this.currentTime = 0;
-        this.pause();
+    $("iframe").each(function() {
+        var src= $(this).attr('src');
+        $(this).attr('src',src);
     });
 </script>
 
