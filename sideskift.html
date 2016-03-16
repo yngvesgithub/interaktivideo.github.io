@@ -104,6 +104,35 @@
     </style>
 </head>
 <body>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="http://interaktivideo.github.io/start.html">Behov for en ny fysikk</a>
+    <a href="http://interaktivideo.github.io/skriv.html">Skriv deg i gang</a>
+    <a href="http://interaktivideo.github.io/historie.html">Kvantefysikkens historie</a>
+    <a href="http://interaktivideo.github.io/spor.html">Spør en forsker</a>
+    <a href="http://interaktivideo.github.io/bodeog.html">Både bølge og partikkel?</a>
+    <a href="http://interaktivideo.github.io/filosofi.html">Forskjellig ståsted</a>
+    <a href="http://interaktivideo.github.io/oppsummering.html">Oppsummering</a>
+</div>
+<div id="main">
+
+    <div class="margin">
+        <img src="http://interaktivideo.github.io/images/heading2.jpg" alt="heading" style="width:100%;height:100%;">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">+ Meny</span>
+        <p><strong>Bølger eller fotoner?</strong></p>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        <div layout="row" layout-margin>
+            <div style="width: 80%"><img src="http://interaktivideo.github.io/images/lyssombeggedeler.jpg" alt="Første foto lys som foton og bølge" style="width:100%;height:100%;"></div>
+            <div style="width: 20%"></div>
+        </div>
 <div class="slideshow-container">
 
     <div class="mySlides fade">
@@ -196,5 +225,16 @@
         dots[slideIndex-1].classList.add("active");
     }
 </script>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.body.style.backgroundColor = "white";
+            }
+        </script>
 </body>
 </html>
