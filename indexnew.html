@@ -12,20 +12,20 @@
             height: 200px;
             border: 0px solid black;
         }
-        /* Caption text */
-        .text {
-            z-index: 100;
-            color: #000000;
-            font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
+        .imageHolder {
+            position: relative;
+            width: 285px;
+            height: 175px;
         }
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-            .slprev, .slnext,.text {font-size: 11px}
+        .imageHolder .caption {
+            position: absolute;
+            width: 283px;
+            height: 50px;
+            bottom: 0px;
+            left: 0px;
+            color: #ffffff;
+            text-align:center;
+            font-weight:bold;
         }
     </style>
 </head>
@@ -36,10 +36,11 @@
 <h2>Vertikal-horisontal navigasjon</h2>
 
 <div class="box">
-    <img src="http://interaktivideo.github.io/images/barberer300200.jpg" alt="" style="width:100%;">
-    <div class="text">Caption Text</div>
-</div>
-
+    <div class="imageHolder">
+        <img src="http://interaktivideo.github.io/images/barberer300200.jpg" alt="" style="width:100%;" />
+        <div class="caption"><br>Caption goes here</div>
+    </div>
+    </div>
 <div class="box">
     <img src="http://interaktivideo.github.io/images/barberer300200.jpg" alt="" style="width:100%;">
 </div>
