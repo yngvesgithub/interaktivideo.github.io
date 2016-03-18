@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-    <title>Start</title>
+    <title>Introduction</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         * {box-sizing:border-box}
@@ -18,7 +18,7 @@
             cursor: pointer;
             position: absolute;
             top: 0;
-            top: 50%;
+            top: 250px;
             width: auto;
             padding: 16px;
             margin-top: -22px;
@@ -101,20 +101,23 @@
     </style>
 </head>
 <body>
-
-
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="http://interaktivideo.github.io/indexnew.html">Home</a>
-    <a href="http://interaktivideo.github.io/intro.html">Sensory Impairment - definitions, laws and efforts</a>
-    <a href="http://interaktivideo.github.io/tema1.html">Vision - <br>low vision and blindness</a>
-    <a href="http://interaktivideo.github.io/tema2.html">Hearing - <br>hearing impairment and deafness</a>
-    <a href="http://interaktivideo.github.io/tema3.html">Dual Sensory Impairments - congenital and acquired deafblindness</a>
-</div>
-
 <div id="main">
-
     <div class="margin">
+        <h2>Introduction</h2>
+        <img src="http://interaktivideo.github.io/images/gladegutter.jpg" alt="" style="width:82%;">
+        <br>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="http://interaktivideo.github.io/indexnew.html">Home</a>
+            <a href="http://interaktivideo.github.io/intro.html">Sensory Impairment - definitions, laws and efforts</a>
+            <a href="http://interaktivideo.github.io/tema1.html">Vision - <br>low vision and blindness</a>
+            <a href="http://interaktivideo.github.io/tema2.html">Hearing - <br>hearing impairment and deafness</a>
+            <a href="http://interaktivideo.github.io/tema3.html">Dual Sensory Impairments - congenital and acquired deafblindness</a>
+        </div>
+
+
+
+
 
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">+ Meny</span>
 
@@ -128,22 +131,69 @@
             }
         </script>
 
+        <div class="slideshow-container">
 
-<br>
-
-
-
-
-                <img src="http://interaktivideo.github.io/images/interpreter.jpg" alt="" style="width:60%;height:60%;">
-
-                <h2 class="sansserif">Startside for vertikal/horisontal navigasjon</h2>
-                <p>Hvert tema har en åpningside med relaterte tema i den horisontale navigasjonen.</p>
+            <div class="mySlides fade">
 
 
+                <div class="numbertext">1 / 3</div>
+                <iframe width="100%" height="800px" src="introa.html"></iframe>
+
+            </div>
+
+            <div class="mySlides fade">
 
 
+                <div class="numbertext">2 / 3</div>
+                <iframe width="100%" height="800px" src="introb.html"></iframe>
+            </div>
+
+            <div class="mySlides fade">
 
 
+                <div class="numbertext">3 / 3</div>
+                <iframe width="100%" height="800px" src="introc.html"></iframe>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length} ;
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].classList.remove("active");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].classList.add("active");
+            }
+        </script>
 
 
         <script>
