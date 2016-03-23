@@ -5,7 +5,10 @@ body {
 img, div, button {
     max-width: 1024px;
 }
-
+.h1{
+    color: #ffc107;
+    font-style: normal;
+}
 
 .sidenav {
     height: 100%;
