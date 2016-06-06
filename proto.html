@@ -1,47 +1,4 @@
 <!DOCTYPE html>
 <html lang="en">
-<<head>
-
-
-    <script>
-
-        function allowDrop(ev)
-        {
-            ev.preventDefault();
-        }
-
-        function drag(ev)
-        {
-            ev.dataTransfer.setData("Text",ev.target.id);
-        }
-
-        function drop(ev)
-        {
-            ev.preventDefault();
-            var data=ev.dataTransfer.getData("Text");
-            ev.target.appendChild(document.getElementById(data));
-        }
-
-    </script>
-</head>
-
-<body>
-
-<img id="img1" src="http://interaktivideo.github.io/images/puzzle1.png"></div>
-
-<img id="img1" src="http://interaktivideo.github.io/images/puzzle1.png">
-</div><img id="img1" src="http://interaktivideo.github.io/images/puzzle1.png" ondrop="drop(event)"
-           ondragover="allowDrop(event)"></div>
-
-
-<img id="img1" src="http://interaktivideo.github.io/images/puzzle1.png"></div>
-<img id="img2" src="http://interaktivideo.github.io/images/puzzle2.png" draggable="true"
-     ondragstart="drag(event)"</div>
-<img id="img1" src="http://interaktivideo.github.io/images/puzzle1.png"></div>
-<img id="img1" src="http://interaktivideo.github.io/images/puzzle1.png"></div>
-<img id="img1" src="http://interaktivideo.github.io/images/puzzle1.png"></div>
-<img id="img1" src="http://interaktivideo.github.io/images/puzzle1.png"></div>
-
-
-</body>
+<iframe src="http://imediamac19.uio.no/wordpress/wp-admin/admin-ajax.php?action=h5p_embed&id=3" width="958" height="241" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="http://imediamac19.uio.no/wordpress/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
 </html>
