@@ -55,19 +55,7 @@ h2.sansserif {
 
 </style>
 </head>
-<script>
-    var menuDisplayState = 'none';
-    
-    function toggleMenu() {
-        if (menuDisplayState === 'block') {
-            menuDisplayState = 'none';
-        } else {
-            menuDisplayState = 'block';
-        }
-        document.getElementById('menu_detail').style.display=menuDisplayState;
-    }
-    
-</script>
+
 
 <body>
 
@@ -100,6 +88,18 @@ Lorem ipsum dolor sit amet, commune definitiones vis at, pro ocurreret molestiae
         <ul><li><a href="http://www.uio.no/" target="_blank" id="white">Dette er en lang menu</a></li><li>Dette er en enda lengre menu</li><li>Dette er den aller lengste menyen</li></ul>
     </div>
 </div>
-
+<script>
+    var menuDisplayState = 'none';
+    
+    function toggleMenu() {
+        if (menuDisplayState === 'block') {
+            menuDisplayState = 'none';
+        } else {
+            menuDisplayState = 'block';
+        }
+        document.getElementById('menu_detail').style.display=menuDisplayState;
+    }
+    
+</script>
 </body>
 </html>
